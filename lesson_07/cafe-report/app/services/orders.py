@@ -1,7 +1,6 @@
 """Заказы: чтение из CSV и расчёты по ним."""
 
 from pathlib import Path
-
 from app.domain.order import Order
 from app.services.importer import read_rows
 
@@ -39,7 +38,9 @@ def revenue_by_waiter(orders: list[Order], top: int = 0) -> dict[str, int]:
         raise ValueError("Список заказов пуст")
     revenue_by_name: dict[str, int] = {}
     for order in orders:
-        revenue_by_name[order.waiter] = revenue_by_name.get(order.waiter, 0) + order.kopeks
+        revenue_by_name[order.waiter] = (
+            revenue_by_name.get(order.waiter, 0) + order.kopeks
+        )
     ranked_revenue = sorted(revenue_by_name.items(), key=lambda pair: -pair[1])
     if top:
         ranked_revenue = ranked_revenue[:top]

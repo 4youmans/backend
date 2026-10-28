@@ -1,0 +1,5 @@
+$ python -m ruff check app/services/orders.py --output-format concise
+exit code: 1
+
+app\services\orders.py:23:5: D417 Missing argument description in the docstring for `revenue_by_waiter`: `top`
+Found 1 error.
