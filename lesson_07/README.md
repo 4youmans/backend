@@ -25,7 +25,7 @@ img/             заглушки снимков, их заменяете сво
 1. Скопируйте папку `materials/tema-04-annotacii-tipov/otchet-kafe-start`
    в `lesson_07/`. Это второй архив проекта «Отчёт кафе»: аннотации в нём
    есть, докстрингов нет.
-2. Откройте в VS Code папку `lesson_07/otchet-kafe-start`
+2. Откройте в VS Code папку `lesson_07/cafe-report`
    (**File → Open Folder**). Настройки редактора и Ruff читаются из корня
    открытой папки.
 3. Создайте окружение и установите зависимости:
@@ -45,8 +45,8 @@ img/             заглушки снимков, их заменяете сво
 |---|---|---|---|
 | 1 | Установить расширения `njpwerner.autodocstring` и `charliermarsh.ruff`, ввести в поиске расширений `@installed` | §2, §11 | `07-01-extensions.png`: в списке autoDocstring, Pylance, Python и Ruff |
 | 2 | Открыть `.vscode/settings.json` командой **Preferences: Open Workspace Settings (JSON)**. Заменить формат на `google-notypes` и дописать `"autoDocstring.includeExtendedSummary": false` | §4–§6 | `07-02-settings.png`: файл с форматом `google-notypes` и четырьмя настройками вида заготовки |
-| 3 | В `app/services/orders.py` сделать пустую строку под подписью `revenue_by_waiter` и вызвать генератор | §3 | `07-03-zagotovka.png`: вставленная заготовка, типов в скобках нет |
-| 4 | Заполнить поля заготовки, переходя по Tab | §3 | `07-04-zapolneno.png`: докстринг без `_summary_` и `_description_` |
+| 3 | В `app/services/orders.py` сделать пустую строку под подписью `revenue_by_waiter` и вызвать генератор | §3 | `07-03-docstring-template.png`: вставленная заготовка, типов в скобках нет |
+| 4 | Заполнить поля заготовки, переходя по Tab | §3 | `07-04-completed-docstring.png`: докстринг без `_summary_` и `_description_` |
 | 5 | Создать сниппет `dsg` в `.vscode/python.code-snippets`, набрать `dsg` под подписью `load_orders` | §8 | `07-05-snippet.png`: список подсказок со строкой `dsg` и названием сниппета |
 | 6 | Вставить сниппет, заполнить поля. Выполнить проверку всего пакета | §8, §9 | `07-06-ruff-app.png`: вывод `ruff check app` и итог `Found … errors` |
 | 7 | Открыть модуль своего варианта (таблица ниже) и панель **Problems** | §11 | `07-07-problems.png`: замечания с источником `Ruff(D…)` для модуля варианта |
@@ -108,7 +108,7 @@ img/             заглушки снимков, их заменяете сво
 
 - `otchet_07.md` с заполненными `___`;
 - `img/` с десятью своими снимками;
-- папку `otchet-kafe-start` с докстрингами в `orders.py` и в модуле варианта,
+- папку `cafe-report` с докстрингами в `orders.py` и в модуле варианта,
   с файлами `.vscode/settings.json` и `.vscode/python.code-snippets`.
 
 Папку `.venv` не добавляйте, она уже указана в `.gitignore` проекта.

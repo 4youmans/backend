@@ -37,13 +37,13 @@ def revenue_by_waiter(orders: list[Order], top: int = 0) -> dict[str, int]:
     """
     if not orders:
         raise ValueError("Список заказов пуст")
-    totals: dict[str, int] = {}
+    revenue_by_name: dict[str, int] = {}
     for order in orders:
-        totals[order.waiter] = totals.get(order.waiter, 0) + order.kopeks
-    ranked = sorted(totals.items(), key=lambda pair: -pair[1])
+        revenue_by_name[order.waiter] = revenue_by_name.get(order.waiter, 0) + order.kopeks
+    ranked_revenue = sorted(revenue_by_name.items(), key=lambda pair: -pair[1])
     if top:
-        ranked = ranked[:top]
-    return dict(ranked)
+        ranked_revenue = ranked_revenue[:top]
+    return dict(ranked_revenue)
 
 
 def sort_orders_in_place(orders: list[Order]) -> None:

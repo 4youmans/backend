@@ -40,7 +40,7 @@
 
 ## 4. Проект с ошибками типов
 
-![Панель Problems на исходном проекте](img/go-06-oshibki-problems.png)
+![Панель Problems на исходном проекте](img/go-06-problems-errors.png)
 
 | Этап | Ошибок в `go build ./...` | Ошибок в Problems |
 |---|---|---|
