@@ -1,0 +1,160 @@
+$ python -m pyright --outputjson --project pyrightconfig.json
+exit code: 1
+
+{
+  "version": "1.1.408",
+  "time": "1793175899767",
+  "generalDiagnostics": [
+    {
+      "file": "type_checking_modes.py",
+      "severity": "error",
+      "message": "Import \"os\" is not accessed",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 7
+        },
+        "end": {
+          "line": 0,
+          "character": 9
+        }
+      },
+      "rule": "reportUnusedImport"
+    },
+    {
+      "file": "type_checking_modes.py",
+      "severity": "error",
+      "message": "\"_squash_spaces\" is private and used outside of the module in which it is declared",
+      "range": {
+        "start": {
+          "line": 3,
+          "character": 27
+        },
+        "end": {
+          "line": 3,
+          "character": 41
+        }
+      },
+      "rule": "reportPrivateUsage"
+    },
+    {
+      "file": "type_checking_modes.py",
+      "severity": "error",
+      "message": "Type of parameter \"prices\" is unknown",
+      "range": {
+        "start": {
+          "line": 6,
+          "character": 10
+        },
+        "end": {
+          "line": 6,
+          "character": 16
+        }
+      },
+      "rule": "reportUnknownParameterType"
+    },
+    {
+      "file": "type_checking_modes.py",
+      "severity": "error",
+      "message": "Type annotation is missing for parameter \"prices\"",
+      "range": {
+        "start": {
+          "line": 6,
+          "character": 10
+        },
+        "end": {
+          "line": 6,
+          "character": 16
+        }
+      },
+      "rule": "reportMissingParameterType"
+    },
+    {
+      "file": "type_checking_modes.py",
+      "severity": "error",
+      "message": "Argument type is unknown\n  Argument corresponds to parameter \"iterable\" in function \"sum\"",
+      "range": {
+        "start": {
+          "line": 7,
+          "character": 15
+        },
+        "end": {
+          "line": 7,
+          "character": 21
+        }
+      },
+      "rule": "reportUnknownArgumentType"
+    },
+    {
+      "file": "type_checking_modes.py",
+      "severity": "error",
+      "message": "\"label\" is possibly unbound",
+      "range": {
+        "start": {
+          "line": 13,
+          "character": 11
+        },
+        "end": {
+          "line": 13,
+          "character": 16
+        }
+      },
+      "rule": "reportPossiblyUnboundVariable"
+    },
+    {
+      "file": "type_checking_modes.py",
+      "severity": "error",
+      "message": "Argument of type \"Literal[40]\" cannot be assigned to parameter \"text\" of type \"str\" in function \"format_title\"\n  \"Literal[40]\" is not assignable to \"str\"",
+      "range": {
+        "start": {
+          "line": 16,
+          "character": 23
+        },
+        "end": {
+          "line": 16,
+          "character": 25
+        }
+      },
+      "rule": "reportArgumentType"
+    },
+    {
+      "file": "type_checking_modes.py",
+      "severity": "error",
+      "message": "\"undefined_name\" is not defined",
+      "range": {
+        "start": {
+          "line": 18,
+          "character": 6
+        },
+        "end": {
+          "line": 18,
+          "character": 20
+        }
+      },
+      "rule": "reportUndefinedVariable"
+    },
+    {
+      "file": "type_checking_modes.py",
+      "severity": "error",
+      "message": "Argument type is unknown\n  Argument corresponds to parameter \"values\" in function \"print\"",
+      "range": {
+        "start": {
+          "line": 18,
+          "character": 6
+        },
+        "end": {
+          "line": 18,
+          "character": 20
+        }
+      },
+      "rule": "reportUnknownArgumentType"
+    }
+  ],
+  "summary": {
+    "filesAnalyzed": 1,
+    "errorCount": 9,
+    "warningCount": 0,
+    "informationCount": 0,
+    "timeInSec": 0.189
+  }
+}

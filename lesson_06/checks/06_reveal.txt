@@ -1,0 +1,5 @@
+$ python -m mypy proba.py
+exit code: 0
+
+proba.py:4: note: Revealed type is "tuple[builtins.int, builtins.int]"
+Success: no issues found in 1 source file
