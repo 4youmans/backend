@@ -1,0 +1,4 @@
+$ python -m mypy proba.py
+proba.py:3: error: Argument 1 to "format_title" has incompatible type "int"; expected "str"  [arg-type]
+proba.py:4: error: Argument 1 to "format_kopeks" has incompatible type "str"; expected "int"  [arg-type]
+Found 2 errors in 1 file (checked 1 source file)
