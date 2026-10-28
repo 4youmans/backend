@@ -1,0 +1,4 @@
+$ python -m ruff format app
+exit code: 0
+
+10 files reformatted, 5 files left unchanged

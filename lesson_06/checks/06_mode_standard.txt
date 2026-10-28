@@ -1,0 +1,64 @@
+$ python -m pyright --outputjson --project pyrightconfig.json
+exit code: 1
+
+{
+  "version": "1.1.408",
+  "time": "1793175898756",
+  "generalDiagnostics": [
+    {
+      "file": "type_checking_modes.py",
+      "severity": "error",
+      "message": "\"label\" is possibly unbound",
+      "range": {
+        "start": {
+          "line": 13,
+          "character": 11
+        },
+        "end": {
+          "line": 13,
+          "character": 16
+        }
+      },
+      "rule": "reportPossiblyUnboundVariable"
+    },
+    {
+      "file": "type_checking_modes.py",
+      "severity": "error",
+      "message": "Argument of type \"Literal[40]\" cannot be assigned to parameter \"text\" of type \"str\" in function \"format_title\"\n  \"Literal[40]\" is not assignable to \"str\"",
+      "range": {
+        "start": {
+          "line": 16,
+          "character": 23
+        },
+        "end": {
+          "line": 16,
+          "character": 25
+        }
+      },
+      "rule": "reportArgumentType"
+    },
+    {
+      "file": "type_checking_modes.py",
+      "severity": "error",
+      "message": "\"undefined_name\" is not defined",
+      "range": {
+        "start": {
+          "line": 18,
+          "character": 6
+        },
+        "end": {
+          "line": 18,
+          "character": 20
+        }
+      },
+      "rule": "reportUndefinedVariable"
+    }
+  ],
+  "summary": {
+    "filesAnalyzed": 1,
+    "errorCount": 3,
+    "warningCount": 0,
+    "informationCount": 0,
+    "timeInSec": 0.189
+  }
+}

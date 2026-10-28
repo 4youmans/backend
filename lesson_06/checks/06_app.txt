@@ -1,0 +1,4 @@
+$ python -m mypy app
+exit code: 0
+
+Success: no issues found in 15 source files
