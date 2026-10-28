@@ -1,0 +1,16 @@
+$ python -m ruff check app
+All checks passed!
+
+$ python -m mypy app
+Success: no issues found in 15 source files
+
+$ python -m pytest -q
+............                                                             [100%]
+12 passed in 0.07s
+
+$ python main.py
+=========== Смена 28.10.2026 ===========
+Петрова Анна                  2 480,50 ₽
+Иванов Пётр                   1 685,00 ₽
+Сидоров Илья                    772,00 ₽
+=========== Итого 4 937,50 ₽ ===========
