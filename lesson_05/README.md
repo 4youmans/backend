@@ -5,7 +5,7 @@
 
 | Вариант | Чем проверяете | Проект | Шаблон отчёта |
 |---|---|---|---|
-| **Python** | Pylance и mypy | `otchet-kafe-bez-tipov` | [`otchet_python.md`](otchet_python.md) |
+| **Python** | Pylance и mypy | `otchet-kafe-bez-tipov` | [`otchet_Паюсов_Семён.md`](otchet_Паюсов_Семён.md) |
 | **Go** | gopls, `go build`, `go vet` | `otchet-kafe-go-oshibki` | [`otchet_go.md`](otchet_go.md) |
 
 Книга: https://algorthimization-course-vvodnoe.vercel.app/mdk0101-razrabotka-modulei/lessons/04-docstrings-i-dokumentaciya/03-proverka-tipov.html
