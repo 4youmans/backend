@@ -1,0 +1,5 @@
+$ python -m mypy app
+exit code: 1
+
+app\ui\console.py:1: error: Function is missing a type annotation  [no-untyped-def]
+Found 1 error in 1 file (checked 15 source files)
